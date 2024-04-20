@@ -90,14 +90,14 @@ const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetail?.i
         title="Whiteboard"
         description="Collaborate in real-time"
         className=" bg-red-600"
-        handleClick={() => router.push('/nocode')}
+        handleClick={() => router.push('/nocode/draw')}
         />
         <HomeCard
         img="/icons/workspace.svg"
         title="workspace"
         description="Collaborate in real-time"
         className="  bg-lime-500"
-        handleClick={() => router.push('/chats')}
+        handleClick={() => router.push('/Chats')}
         />
 
 {!callDetail ? (
@@ -107,7 +107,7 @@ const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetail?.i
           title="Create Meeting"
           handleClick={createMeeting}
         >
-          <div className="flex flex-col gap-2.5 text-black">
+          <div className="flex flex-col gap-2.5 text-white ">
             <label className="text-base font-normal leading-[22.4px] text-sky-2 text-white">
               Add a description
             </label>
@@ -149,8 +149,6 @@ const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetail?.i
           buttonText="Copy Meeting Link"
         />
       )}
-
-
         <MeetingModal
         isOpen={meetingState === 'isInstantMeeting'}
         onClose={() => setMeetingState(undefined)}

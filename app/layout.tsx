@@ -5,6 +5,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 import { Toaster } from "@/components/ui/toaster"
 import '@stream-io/video-react-sdk/dist/css/styles.css';
 import'react-datepicker/dist/react-datepicker.css';
+import { ThemeProvider } from "@/components/theme-provider.tsx/page";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -34,10 +35,21 @@ export default function RootLayout({
         }}
       >
     <html lang="en">
-      <body className={inter.className} style={{ backgroundColor: "#161925" }}>{children}
+      <body className={inter.className} style={{ backgroundColor: "#333" }}>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+          >
+        {children}
+    </ThemeProvider>
+           
       <Toaster />
+     
+    
+
       </body>
     </html>
     </ClerkProvider>
+    
   );
 }

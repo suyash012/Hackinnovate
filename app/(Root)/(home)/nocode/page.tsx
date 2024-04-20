@@ -16,21 +16,21 @@ import React from 'react';
         title="Draw"
         description="Excel drawing tool"
         className=" bg-yellow-500"
-        handleClick={() => router.push('/draw')}
+        handleClick={() => router.push('/nocode/draw')}
       />
       <HomeCard
         img="/icons/nocode.svg"
         title="Notes"  
         description="Create notes"  
         className="  bg-red-500"
-        handleClick={() => router.push('/notes')}
+        handleClick={() => router.push('/nocode/Notes')}
       />
       <HomeCard
         img="/icons/nocode.svg"
         title="Todo"  
         description="Create Todo list"  
         className="  bg-blue-500"
-        handleClick={() => router.push('/todo')}
+        handleClick={() => router.push('/nocode/TODO')}
       />
           </div>
           </section>

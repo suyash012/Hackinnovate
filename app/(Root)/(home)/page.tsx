@@ -1,4 +1,5 @@
 import MeetingTypeList from '@/components/MeetingTypeList';
+import { ModeToggle } from '@/components/ui/theme';
 import React from 'react'
 
 const Home = () => {
@@ -8,8 +9,8 @@ const Home = () => {
   const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
   const date = (new Intl.DateTimeFormat('en-US', { dateStyle: 'full' })).format(now);
   return (
-    <section className="flex size-full flex-col gap-5 text-white">
-        <div className='h-[300px] w-full rounded-[20px] bg-hero bg-cover'>
+    <section className="flex size-full  gap-4 text-white">
+        <div className='h-5/6 w-96 rounded-[20px] bg-hero bg-cover'>
         <div className="flex h-full flex-col justify-between max-md:px-5 max-md:py-8 lg:p-11">
           <h2 className="glassmorphism max-w-[273px] rounded py-2 text-center text-base font-normal">
             Upcoming Meeting at: 12:30 PM

@@ -2,9 +2,10 @@ import Navbar from '@/components/navbar'
 import Sidebar from '@/components/sidebar'
 import React, { ReactNode } from 'react'
 
+
 function HomeLayout({children}:{children:ReactNode}) {
   return (
-    <div className='text-white'>
+    <div className='text-black'>
       <main className=' relative'>
         <Navbar/>
         <div className=' flex'>
