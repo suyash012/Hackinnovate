@@ -4,7 +4,7 @@ import { Router } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 
-      const nocode = () => {
+      const Nocode = () => {
         const router = useRouter();
         return (
           <section className="flex size-full flex-col gap-5 text-white">
@@ -37,6 +37,6 @@ import React from 'react';
         );
       };
 
-      export default nocode;
+      export default Nocode;
           
     
